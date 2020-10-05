@@ -5,18 +5,18 @@ var gulp = require('gulp'),
   notify = require('gulp-notify'),
   uglifycss = require('gulp-uglifycss'),
   imagemin = require('gulp-imagemin'),
-  htmlmin = require('gulp-htmlmin')
-  ngAnnotate = require('gulp-ng-annotate')
+  htmlmin = require('gulp-htmlmin'),
+  ngAnnotate = require('gulp-ng-annotate'),
+  minify = require("gulp-babel-minify");
 gulp.task('minify-js', function() {
-  return gulp.src(['js/**', '!js/tinymce/**'])
+  return gulp.src(['js/**'])
   	.pipe(ngAnnotate())
-    .pipe(uglify())
+    	.pipe(minify({
+	      mangle: {
+		keepClassName: true
+	      }
+	    }))
     .pipe(gulp.dest('dist/js/'));
-});
-
-gulp.task('copy-tinymce-js', function() {
-  return gulp.src(['js/tinymce/**'])
-    .pipe(gulp.dest('dist/js/tinymce'));
 });
 
 gulp.task('minify-css', function() {
@@ -69,7 +69,6 @@ gulp.task('i18n', function() {
 
 gulp.task('build', [
   'minify-js',
-  'copy-tinymce-js',
   'minify-css',
   'minify-img',
   'minify-components-css',

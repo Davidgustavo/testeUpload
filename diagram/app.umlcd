@@ -433,6 +433,149 @@
           "display": "normal"
         }
       }
+    },
+    {
+      "type": "uml.Class",
+      "name": "DataHora",
+      "attributes": [
+        "id:java.lang.String",
+        "item_hora:java.sql.Time",
+        "item_data:java.util.Date"
+      ],
+      "methods": [],
+      "position": {
+        "x": 173,
+        "y": 337
+      },
+      "size": {
+        "width": 176.71875,
+        "height": 118.67371368408203
+      },
+      "angle": 0,
+      "multitenantContextJsonIgnore": "false",
+      "multitenantContextIgnoreEntities": "",
+      "role": "Auto",
+      "queries": [],
+      "tableName": null,
+      "realName": "",
+      "tableScheme": null,
+      "generateView": "Auto",
+      "isRest": "true",
+      "multitenantContext": "",
+      "restSecurity": null,
+      "restPath": "",
+      "id": "221ae34b-1f00-4b7b-9f8c-5a522a25c4c2",
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        },
+        {
+          "name": "item_hora",
+          "type": "java.sql.Time",
+          "dbName": "item_hora",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Item _hora",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        },
+        {
+          "name": "item_data",
+          "type": "java.util.Date",
+          "dbName": "item_data",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Item _data",
+          "mask": "99/99/9999",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        }
+      ],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "z": 12,
+      "attrs": {
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-attrs-rect": {
+          "height": 90,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "text": "DataHora",
+          "font-weight": "bold"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\nitem_hora\nitem_data\n"
+        },
+        ".uml-class-attrs-value": {
+          "ref-x": 82.90625,
+          "font-size": 11,
+          "text": "java.lang.String\njava.sql.Time\njava.util.Date\n"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        }
+      }
     }
   ],
   "selectedGroup": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
@@ -449,6 +592,7 @@
       "name": "",
       "id": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
       "cells": [
+        "221ae34b-1f00-4b7b-9f8c-5a522a25c4c2",
         "d2e50f97-0b9e-4037-94ba-af64568af247",
         "1df87f56-c5ba-47f5-8e68-82931f49b989"
       ]

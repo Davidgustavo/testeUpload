@@ -28,7 +28,7 @@ public class Upload {
 							cronapi.io.Operations.fileMove(cronapi.list.Operations.get(upload, Var.valueOf(1)),
 									Var.valueOf(cronapi.io.Operations.fileAppDir().toString()
 											+ cronapi.io.Operations.fileSeparator().toString()
-											+ Var.valueOf("Pasta Upload").toString()));
+											+ Var.valueOf("PastaNova").toString()));
 						});
 				return Var.VAR_NULL;
 			}

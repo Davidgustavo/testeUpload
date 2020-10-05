@@ -5,11 +5,11 @@
 <div data-component="crn-button" id="crn-button-564202">
     <button class="btn btn-primary" data-component="crn-button" type="submit" onclick="" ng-click="User.startInserting()" ng-hide="User.inserting || User.editing"><i class="fa fa-user"></i> <span class="">{{"template.crud.new" | translate}}</span></button>
 </div>
-<div class="component-holder" data-component="crn-grid" id="crn-grid-User">
+<datasource name="Teste" entity="api/cronapi/query/rkxcays5erfl/" keys="id" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" data-component="crn-datasource" class="component-holder" id="crn-datasource-849634"></datasource><div class="component-holder ng-binding ng-scope" data-component="crn-combobox-dynamic" id="crn-combobox-dynamic-487507"><div class="form-group"><label for="">Label</label><ui-select crn-datasource="Teste" ng-model="datasource.active" ng-disabled="disabled" theme="bootstrap" class="crn-select" ng-required="false"><ui-select-match placeholder="Select..." class="">{{$select.selected.name}}</ui-select-match><ui-select-choices repeat="rowData as rowData in datasource.data | filter : $select.search" class="" refresh="" refresh-deplay=""><div class="">{{rowData.name}}</div></ui-select-choices></ui-select></div></div><div class="component-holder ng-binding ng-scope" data-component="crn-textinput" id="crn-textinput-198017"><div class="form-group"><label for="exampleInputEmail1">Label</label><input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="vars.testeuser" class="form-control" id="testeuser" placeholder="Placeholder text"></div></div><button class="btn btn-default component-holder" type="submit" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.Combobox:Executar', null, null)" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" data-component="crn-button" id="crn-button-217704"><i class="glyphicon glyphicon-home"></i> <span>Button </span></button><div class="component-holder" data-component="crn-grid" id="crn-grid-User">
     <div crn-datasource="User" class="" ng-hide="User.editing || User.inserting">
         <table class="table  table-bordered table-hover table-striped">
-            <thead>
-            <tr class="table-header">
+            <thead style="">
+            <tr class="table-header" style="">
                 <th class="">
                     <div class="">Email</div>
                 </th>
@@ -24,8 +24,8 @@
                 </th>
             </tr>
             </thead>
-            <tbody>
-            <tr class="table-content" ng-repeat="rowData in datasource.data">
+            <tbody style="">
+            <tr class="table-content" ng-repeat="rowData in datasource.data" style="">
                 <td class="">
                     <div class="">
                         {{rowData.email}}
@@ -124,8 +124,8 @@
                         <div class="component-holder" data-component="crn-grid" id="crn-grid-RoleGrid">
                             <div crn-datasource="RoleGrid">
                                 <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                    <tr class="table-header">
+                                    <thead style="">
+                                    <tr class="table-header" style="">
                                         <th class="">
                                             <div class="">Função</div>
                                         </th>
@@ -136,8 +136,8 @@
                                         </th>
                                     </tr>
                                     </thead>
-                                    <tbody>
-                                    <tr class="table-content" ng-repeat="rowData in datasource.data">
+                                    <tbody style="">
+                                    <tr class="table-content" ng-repeat="rowData in datasource.data" style="">
                                         <td>
                                             <div>
                                                 {{rowData.id}}
