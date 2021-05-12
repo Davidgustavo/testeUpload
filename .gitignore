@@ -19,3 +19,6 @@ buildNumber.properties
 .classpath
 .project
 *.iml
+node_modules
+.factorypath
+.settings
